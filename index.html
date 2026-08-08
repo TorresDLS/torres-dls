@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Torres DLS - Kits de Dream League Soccer. Encuentra kits por continente, selección y equipo.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Torres DLS | Kits de Dream League Soccer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Torres DLS inicio">
+      <span class="brand-mark">TD</span>
+      <span>TORRES <b>DLS</b></span>
+    </a>
+    <div class="top-actions">
+      <button id="themeBtn" class="icon-btn" title="Cambiar tema" aria-label="Cambiar tema">☾</button>
+      <button id="favoritesBtn" class="icon-btn" title="Ver favoritos" aria-label="Ver favoritos">♥ <span id="favCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">KITS · ESCUDOS · DLS</p>
+        <h1>Encuentra tu próximo kit.</h1>
+        <p class="hero-text">Busca equipos, temporadas y ligas en el catálogo de Torres DLS.</p>
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Buscar Barcelona, México, 2015..." autocomplete="off">
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">CATÁLOGO</p>
+          <div class="breadcrumb" id="breadcrumb"></div>
+          <h2 id="sectionTitle">Equipos</h2>
+        </div>
+        <button id="clearSearch" class="text-btn hidden">Limpiar búsqueda</button>
+      </div>
+
+      <div class="filters" id="filters"></div>
+      <div id="teamView" class="team-view"></div>
+      <div id="kitView" class="hidden"></div>
+      <p id="emptyState" class="empty hidden">No encontramos resultados con esa búsqueda.</p>
+    </section>
+  </main>
+
+  <dialog id="kitDialog">
+    <div class="dialog-card">
+      <button id="closeDialog" class="close-btn" aria-label="Cerrar">×</button>
+      <div id="dialogImage" class="dialog-image">KIT</div>
+      <p id="dialogLeague" class="eyebrow"></p>
+      <h2 id="dialogTitle"></h2>
+      <p id="dialogMeta" class="muted"></p>
+      <div class="dialog-actions">
+        <button id="copyBtn" class="primary-btn">📋 Copiar URL</button>
+        <button id="shareBtn" class="secondary-btn">📤 Compartir</button>
+        <button id="favBtn" class="secondary-btn">♥ Favorito</button>
+      </div>
+      <p id="dialogMessage" class="message"></p>
+    </div>
+  </dialog>
+
+  <footer>
+    <span>© <span id="year"></span> Torres DLS</span>
+    <span>Kits de Dream League Soccer</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
