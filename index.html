@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Torres DLS - Kits de Dream League Soccer. Encuentra kits por país, liga y club.">
+  <meta name="description" content="Torres DLS - Kits de Dream League Soccer. Encuentra kits por continente, selección y equipo.">
   <meta name="theme-color" content="#0b1020">
   <title>Torres DLS | Kits de Dream League Soccer</title>
   <link rel="stylesheet" href="style.css">
@@ -37,21 +37,16 @@
       <div class="section-head">
         <div>
           <p class="eyebrow">CATÁLOGO</p>
-          <h2 id="sectionTitle">Últimos kits</h2>
+          <div class="breadcrumb" id="breadcrumb"></div>
+          <h2 id="sectionTitle">Equipos</h2>
         </div>
         <button id="clearSearch" class="text-btn hidden">Limpiar búsqueda</button>
       </div>
 
-      <div class="filters" id="filters">
-        <button class="filter active" data-filter="Todos">Todos</button>
-        <button class="filter" data-filter="Europa">🌍 Europa</button>
-        <button class="filter" data-filter="América">🌎 América</button>
-        <button class="filter" data-filter="Asia">🌏 Asia</button>
-        <button class="filter" data-filter="Selecciones">🏆 Selecciones</button>
-      </div>
-
-      <div id="kitGrid" class="kit-grid"></div>
-      <p id="emptyState" class="empty hidden">No encontramos kits con esa búsqueda.</p>
+      <div class="filters" id="filters"></div>
+      <div id="teamView" class="team-view"></div>
+      <div id="kitView" class="hidden"></div>
+      <p id="emptyState" class="empty hidden">No encontramos resultados con esa búsqueda.</p>
     </section>
   </main>
 
